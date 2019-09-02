@@ -46,7 +46,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //select all anchor tags
 const newNav = document.querySelectorAll('a');
 
-//assign value from siteContent to anchor tags
+//Nav
 newNav[0].textContent = siteContent.nav['nav-item-1'];
 newNav[1].textContent = siteContent.nav['nav-item-2'];
 newNav[2].textContent = siteContent.nav['nav-item-3'];
@@ -117,3 +117,7 @@ contactEmail.textContent = siteContent["contact"]["email"];
 //Copyright
 const copyrightP = document.querySelector('footer p');
 copyrightP.textContent = siteContent["footer"]["copyright"];
+
+//change nav items to green
+document.querySelectorAll('nav a').forEach(col =>col.style.color = "green");
+
