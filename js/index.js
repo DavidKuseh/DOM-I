@@ -121,3 +121,18 @@ copyrightP.textContent = siteContent["footer"]["copyright"];
 //change nav items to green
 document.querySelectorAll('nav a').forEach(col =>col.style.color = "green");
 
+//.appendChild
+//Parent element
+const nav = document.querySelector('nav');
+
+//New anchor item
+let navItem = document.createElement('a');
+navItem.textContent = 'Social Media';
+
+nav.appendChild(navItem);
+
+//Another anchor item
+let navItem2 = document.createElement('a');
+navItem2.textContent = 'FAQ';
+
+nav.prepend(navItem2);
