@@ -94,9 +94,22 @@ mainContentProductH4.textContent = siteContent["main-content"]["product-h4"];
 const mainContentProductP = document.querySelectorAll('.bottom-content p')[1];
 mainContentProductP.textContent = siteContent["main-content"]["product-content"];
 
-const mainContentVisionH4 = document.querySelectorAll('.bottom-content H4')[2];
+const mainContentVisionH4 = document.querySelectorAll('.bottom-content h4')[2];
 mainContentVisionH4.textContent = siteContent["main-content"]["vision-h4"];
 
 const mainContentVisionP = document.querySelectorAll('.bottom-content p')[2];
 mainContentVisionP.textContent = siteContent["main-content"]["vision-content"];
+
+//Contact
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+const contactAddress = document.querySelectorAll('.contact p')[0];
+contactAddress.textContent = siteContent["contact"]["address"];
+
+const contactPhone = document.querySelectorAll('.contact p')[1];
+contactPhone.textContent = siteContent["contact"]["phone"];
+
+const contactEmail = document.querySelectorAll('.contact p')[2];
+contactEmail.textContent = siteContent["contact"]["email"];
 
