@@ -54,13 +54,14 @@ newNav[3].textContent = siteContent.nav['nav-item-4'];
 newNav[4].textContent = siteContent.nav['nav-item-5'];
 newNav[5].textContent = siteContent.nav['nav-item-6'];
 
-
+//Slogan
 const newCta = document.querySelector('.cta h1');
 newCta.textContent = siteContent.cta['h1'];
 
 const newButton = document.querySelector('.cta button');
 newButton.textContent = siteContent.cta['button'];
 
+//Code snippet image
 const newImg = document.getElementById("cta-img");
 newImg.setAttribute('src', siteContent.cta["img-src"]);
 
@@ -113,3 +114,6 @@ contactPhone.textContent = siteContent["contact"]["phone"];
 const contactEmail = document.querySelectorAll('.contact p')[2];
 contactEmail.textContent = siteContent["contact"]["email"];
 
+//Copyright
+const copyrightP = document.querySelector('footer p');
+copyrightP.textContent = siteContent["footer"]["copyright"];
